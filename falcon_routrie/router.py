@@ -29,6 +29,8 @@ class RoutrieRouter:
             uri_template,
         )
 
+        self.find = self._compile_and_find
+
     def _compile_and_find(self, uri: str, req: object = None):
         with self._lock:
             self._router = routrie.Router(self._routes)
