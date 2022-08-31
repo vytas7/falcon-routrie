@@ -1,0 +1,29 @@
+[project]
+name = "falcon-routrie"
+description = "Falcon router leveraging routrie"
+authors = [
+    {name = "Vytautas Liuolia"}
+]
+license = { text = "MIT" }
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Software Development",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = [
+    "falcon",
+    "routrie",
+]
+requires-python = ">=3.7"
+version = "0.0.1dev0"
+
+[tool.setuptools]
+packages = ["falcon_routrie"]
+# repository = "https://github.com/vytas7/falcon-routrie"
+
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = ["setuptools>=47"]
